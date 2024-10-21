@@ -1,0 +1,248 @@
+@import 'scss/bootstrap';
+@import 'scss/card';
+@import 'scss/button';
+@import 'scss/screenLoader';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.auth {
+    margin-top: 10%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header,
+footer {
+    background-color: #588157;
+}
+
+.icon {
+    height: 30px;
+}
+
+.tel-no,
+.email {
+    text-decoration: none;
+    color: #000;
+}
+
+.email:hover,
+.tel-no:hover {
+    text-decoration: underline;
+}
+
+
+.backImg {
+    background-image: url(./assets/backImg.png);
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin-top: 5%;
+}
+
+.aboutImg {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.animation {
+    color: #588157;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+// ::-webkit-scrollbar {
+//     display: none;
+// }
+
+#contactCard,
+#cartCard {
+    width: 50%;
+}
+
+@media screen and (max-width:991px) {
+
+    #contactCard,
+    #cartCard {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    #contactCard,
+    #cartCard {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    #contactCard,
+    #cartCard {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:490px) {
+
+    #contactCard,
+    #cartCard {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:445px) {
+
+    #contactCard,
+    #cartCard {
+        width: 100%;
+    }
+}
+
+.img1 {
+    background-image: url(../src/assets/backImg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.beforeCard {
+    background: transparent;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+
+.img2 {
+    min-height: 400px;
+    width: 100%;
+}
+
+.btn1 {
+    height: 40px;
+    border: 2px solid;
+    padding: 5px;
+    border-color: red;
+    background: white;
+}
+
+.btn2 {
+    height: 40px;
+    border: 2px solid;
+    padding: 5px;
+    border-color: rgb(86, 86, 250);
+    background: white;
+}
+
+.hr-lines:before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: black;
+}
+
+.hr-lines {
+    position: relative;
+    max-width: 500px;
+    margin: 50px;
+    text-align: center;
+}
+
+.hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: gold;
+}
+
+#robot-face {
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+// ------------------HEADER HOVER----------------------------------------------------------------------
+
+a {
+    text-decoration: none;
+}
+
+.menu__link {
+    color: #fff;
+    line-height: 2;
+    position: relative;
+}
+
+.menu__link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -.25rem;
+    right: 0;
+    transition: right .4s, width .4s, left .4s;
+}
+
+.menu__link:hover::before {
+    width: 100%;
+    left: 0;
+}
