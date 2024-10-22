@@ -18,7 +18,7 @@ const reducer = (state, action) => {
 
 export default function AuthContextProvider(props) {
     const [state, dispatch] = useReducer(reducer, initialState)
-    const [isAppLoading, setIsAppLoading] = useState(false)
+    const [isAppLoading, setIsAppLoading] = useState(true)
     const [cart, setCart] = useState([])
 
     useEffect(() => {

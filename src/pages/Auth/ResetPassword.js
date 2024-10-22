@@ -58,7 +58,7 @@ export default function ResetPassword() {
                     <div className="row">
                         <div className="col">
                             <Form className='d-flex justify-content-center align-items-center py-5'>
-                                <div className="card beforeCard p-4 w-50">
+                                <div className="card beforeCard p-4">
                                     <h4>Reset Password</h4>
                                     <div className="row my-2">
                                         <div className="col">
@@ -74,7 +74,7 @@ export default function ResetPassword() {
                                     </div>
                                     <div className="row mt-4">
                                         <div className="col text-center">
-                                            <button to="/resetpassword" className='border-0 rounded-2 w-75 text-white' onClick={resetPassword} style={{ height: 40, backgroundColor: "#588157" }}>Reset Password</button>
+                                            <button to="/resetpassword" className='border-0 rounded-2 w-75 text-white' onClick={resetPassword} style={{ minHeight: 40, backgroundColor: "#588157" }}>Reset Password</button>
                                         </div>
                                     </div>
                                 </div>

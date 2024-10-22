@@ -63,7 +63,7 @@ export default function Login() {
                     <div className="row">
                         <div className="col">
                             <Form className='d-flex justify-content-center align-items-center py-5'>
-                                <div className="card beforeCard auth p-4 w-50">
+                                <div className="card beforeCard auth p-4">
                                     <h4>Login</h4>
                                     <div className="d-flex">
                                         <p>Doesn't have an account yet?</p>
@@ -92,7 +92,7 @@ export default function Login() {
                                     </div>
                                     <div className="row mt-2">
                                         <div className="col text-center">
-                                            <button className='border-0 rounded-2 w-75 text-white' onClick={login} style={{ height: 40, backgroundColor: "#588157" }}>Login</button>
+                                            <button className='border-0 rounded-2 w-75 text-white' onClick={login} style={{ minHeight: 40, backgroundColor: "#588157" }}>Login</button>
                                         </div>
                                     </div>
                                 </div>

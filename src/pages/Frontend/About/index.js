@@ -3,31 +3,32 @@ import { Link } from 'react-router-dom'
 import img from '../../../assets/aboutImg.png'
 
 export default function About() {
-    const stars = document.querySelectorAll('.star');
-    const robotFace = document.getElementById('robot-face');
+    // const stars = document.querySelectorAll('.star');
+    // const robotFace = document.getElementById('robot-face');
 
-    stars.forEach(star => {
-        star.addEventListener('click', function () {
-            const rating = this.getAttribute('data-rate');
-            switch (rating) {
-                case '5':
-                    robotFace.textContent = '😁'; // Smiling face for 5 stars
-                    break;
-                case '4':
-                    robotFace.textContent = '😊'; // Happy face for 4 stars
-                    break;
-                case '3':
-                    robotFace.textContent = '😐'; // Neutral face for 3 stars
-                    break;
-                case '2':
-                    robotFace.textContent = '😕'; // Unhappy face for 2 stars
-                    break;
-                case '1':
-                    robotFace.textContent = '😢'; // Sad face for 1 star
-                    break;
-            }
-        });
-    });
+    // stars.forEach(star => {
+    //     star.addEventListener('click', function () {
+    //         const rating = this.getAttribute('data-rate');
+    //         { console.log(rating)}
+    //         switch (rating) {
+    //             case '5':
+    //                 robotFace.textContent = '😁'; // Smiling face for 5 stars
+    //                 break;
+    //             case '4':
+    //                 robotFace.textContent = '😊'; // Happy face for 4 stars
+    //                 break;
+    //             case '3':
+    //                 robotFace.textContent = '😐'; // Neutral face for 3 stars
+    //                 break;
+    //             case '2':
+    //                 robotFace.textContent = '😕'; // Unhappy face for 2 stars
+    //                 break;
+    //             case '1':
+    //                 robotFace.textContent = '😢'; // Sad face for 1 star
+    //                 break;
+    //         }
+    //     });
+    // });
 
 
     return (
@@ -52,7 +53,7 @@ export default function About() {
                         In 2020, Awais Mart awarded to be ranked as the top 15 eCommerce site for contributing to the region’s economy and knowledge development by Middle East Excellence Awards Institute.
                     </div>
                 </div>
-                <div className="row mt-5">
+                {/* <div className="row mt-5">
                     <div className="col d-flex justify-content-center">
                         <div className="rating">
                             <span className="star" data-rate={1}>
@@ -77,7 +78,7 @@ export default function About() {
                     <div className="col d-flex justify-content-center">
                         <div id="robot-face" />
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="d-flex justify-content-center p-2 my-5">
                 <Link to="/aboutme"><button className='rounded-2' style={{ backgroundColor: "#588157", width: "80px", height: "37px" }}>About Me</button></Link>

@@ -5,7 +5,7 @@ import { useAuthContext } from '../../context/AuthContext'
 import { message } from 'antd'
 
 export default function Navbar() {
-    const {cart, dispatch} = useAuthContext()
+    const { cart, dispatch } = useAuthContext()
     const logout = () => {
         dispatch({ type: "SET_LOGGED_OUT" })
         localStorage.setItem("token", "false")
@@ -48,9 +48,13 @@ export default function Navbar() {
                                 </li>
                             </ul>
                             <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
-                                <li className="nav-item d-flex">
+                                <li className="nav-item">
                                     <Link to="/about" className="nav-link active menu__link">About Us</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link to="/contact" className="nav-link active menu__link">Contact Us</Link>
+                                </li>
+                                <li className="nav-item">
                                     <button className='button1' onClick={logout}>Logout</button>
                                 </li>
                             </ul>

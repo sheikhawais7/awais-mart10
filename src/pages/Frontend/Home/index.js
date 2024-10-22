@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <div className="backImg">
         <div className="animation">
-          <h1>Online grocery store Faisalabad</h1>
+          <h1 className='text-center'>Online grocery store Faisalabad</h1>
         </div>
       </div>
 

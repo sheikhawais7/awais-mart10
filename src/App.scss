@@ -17,10 +17,6 @@ main {
     flex: 1 0 auto;
 }
 
-.auth {
-    margin-top: 10%;
-}
-
 header {
     position: fixed;
     width: 100%;
@@ -99,10 +95,16 @@ body {
     width: 50%;
 }
 
+.auth {
+    margin-top: 10%;
+    width: 50%;
+}
+
 @media screen and (max-width:991px) {
 
     #contactCard,
-    #cartCard {
+    #cartCard,
+    .auth {
         width: 60%;
     }
 }
@@ -110,7 +112,8 @@ body {
 @media screen and (max-width:770px) {
 
     #contactCard,
-    #cartCard {
+    #cartCard,
+    .auth {
         width: 70%;
     }
 }
@@ -118,7 +121,8 @@ body {
 @media screen and (max-width:550px) {
 
     #contactCard,
-    #cartCard {
+    #cartCard,
+    .auth {
         width: 80%;
     }
 }
@@ -126,7 +130,8 @@ body {
 @media screen and (max-width:490px) {
 
     #contactCard,
-    #cartCard {
+    #cartCard,
+    .auth {
         width: 90%;
     }
 }
@@ -134,10 +139,13 @@ body {
 @media screen and (max-width:445px) {
 
     #contactCard,
-    #cartCard {
+    #cartCard,
+    .auth {
         width: 100%;
     }
 }
+
+
 
 .img1 {
     background-image: url(../src/assets/backImg.png);

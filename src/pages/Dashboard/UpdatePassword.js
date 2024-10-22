@@ -59,7 +59,7 @@ export default function UpdatePassword() {
                     <div className="row">
                         <div className="col">
                             <Form className="d-flex justify-content-center align-items-center py-5">
-                                <div className="card beforeCard auth p-4 w-50">
+                                <div className="card beforeCard auth p-4">
                                     <h4>Update Password</h4>
                                     <div className="row mt-2">
                                         <div className="col">
@@ -81,7 +81,7 @@ export default function UpdatePassword() {
                                     </div>
                                     <div className="row mt-4">
                                         <div className="col text-center">
-                                            <button className='btn btn-info border-0 rounded-2 w-75 text-white' onClick={updatePassword} style={{ backgroundColor:"#588157", height: 40 }}>Update Password</button>
+                                            <button className='btn btn-info border-0 rounded-2 w-75 text-white' onClick={updatePassword} style={{ backgroundColor:"#588157", minHeight: 40 }}>Update Password</button>
                                         </div>
                                     </div>
                                 </div>

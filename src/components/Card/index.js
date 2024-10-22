@@ -20,7 +20,7 @@ export default function Card(props) {
 
     return (
         <>
-            <div className="col col-lg-4 mt-5">
+            <div className="col col-lg-4 mt-5 d-flex justify-content-center">
                 <div className="card"style={{"height":"410px"}}>
                     <div className="image-container">
                         <img src={props.img} alt="" />

@@ -37,8 +37,10 @@ export default function Topbar() {
                             </li>
                         </ul>
                         <ul className="navbar-nav ms-auto me-2 mb-lg-0">
-                            <li className="nav-item d-flex">
+                            <li className="nav-item">
                                 <Link to="/about" className="nav-link active menu__link">About Us</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link to="/contact" className="nav-link active menu__link">Contact Us</Link>
                             </li>
                         </ul>
