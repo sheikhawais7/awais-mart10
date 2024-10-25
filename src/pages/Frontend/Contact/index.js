@@ -4,7 +4,7 @@ import img2 from '../../../assets/Instagram.svg'
 import img3 from '../../../assets/linkedin.svg'
 import img4 from '../../../assets/Github.svg'
 
-export default function Conatact() {
+export default function Contact() {
     return (
         <>
             <div className="backImg">
@@ -37,7 +37,7 @@ export default function Conatact() {
                                 <h3 className='mt-5'>Get Connect With Me</h3>
                                 <p className='mt-3'>As you want</p>
                                 <a href="https://api.whatsapp.com/send?phone=923227992626"><img src={img1} className="icon" alt="insta-icon" /></a>
-                                <a href="https://www.instagram.com/its_me_sheikh_123/"><img src={img2} className="icon ms-4" alt="insta-icon" /></a>
+                                <a href="https://www.instagram.com/shk_awais123/"><img src={img2} className="icon ms-4" alt="insta-icon" /></a>
                                 <a href="https://www.linkedin.com/in/sheikh-awais-7b0466300/"><img src={img3} className="icon ms-4" alt="linkedin-icon" /></a>
                                 <a href="https://github.com/sheikhawais7"><img src={img4} className="icon ms-4" alt="github-icon" /></a>
                                 <h5 className="mt-3"><a className="tel-no" href="tel:03227992626">+92 322 7992626</a></h5>

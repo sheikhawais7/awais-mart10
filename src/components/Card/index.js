@@ -13,7 +13,7 @@ export default function Card(props) {
             message.success("Added Successfully")
         }
         else {
-            navigate("/auth/login")
+            navigate("/auth/signup")
             message.error("First Login Or Register Yourself")
         }
     }
